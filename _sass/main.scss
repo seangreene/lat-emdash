@@ -16,11 +16,7 @@
   font-size: 96px;
   font-weight: 700;
 }
-.card-body h2 {
-  font-family: 'Cabin Condensed', sans-serif;
-  font-weight: 400;
-  font-size: 21px;
-}
+
 .jumbotron h1, .card-body h2 a {
 	color: #34749e
 }
@@ -70,7 +66,9 @@ figure img {
 }
 
 h2.card-text.headline {
-	font-size: 21px;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
 	margin-bottom: 5px;
 }
 
