@@ -21,8 +21,12 @@
   font-weight: 700;
 }
 
-.jumbotron h1, .post-body h2.headline {
-	color: #002c73;
+.jumbotron h1, .lead {
+  color: white;
+} 
+
+.post-body h2.headline {
+	color: #00BFFF;
 }
 p, li {
 	font-family: 'Roboto', sans-serif;
