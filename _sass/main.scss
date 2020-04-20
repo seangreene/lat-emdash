@@ -33,7 +33,7 @@ p, li {
 }
 
 .row {
-  justify-content: center;
+  margin: 0;
 }
 
 .post {
@@ -120,8 +120,8 @@ p, li {
 }
 @media (max-width: 767px){
 
-  .bb8-race-track {
-    animation-duration: 10s;
+  .bb8-race-car {
+    animation-duration: 8s;
   }
 
 }
