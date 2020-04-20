@@ -1,3 +1,7 @@
+.nav-logo {
+  width:20px; 
+  margin-right: 10px;
+}
 .navbar h2 {
   font-family: 'Cabin Condensed', sans-serif;
   font-weight: 600;
@@ -9,7 +13,7 @@
 }
 
 
-.jumbotron h1, .card-body h2 {
+.jumbotron h1, .post-body h2 {
   font-family: 'Cabin Condensed', sans-serif;
 }
 .jumbotron h1 {
@@ -17,30 +21,49 @@
   font-weight: 700;
 }
 
-.jumbotron h1, .card-body h2 a {
-	color: #34749e
+.jumbotron h1, .post-body h2.headline {
+	color: #002c73;
 }
 p, li {
 	font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+  line-height: 24px;
+  color: #333;
+  font-weight: 200;
 }
 
 .row {
   justify-content: center;
 }
-.card {
-  width: 100%;
+
+.post {
   max-width: 650px;
+  width: 100%;
+  padding-bottom: 35px;
+  margin: 35px auto 0;  
+  border-bottom: 1px solid #ddd;
+}
+.post:last-of-type {
+  border-bottom: none;
 }
 
+.hidden {
+  display: none;
+}
 .jumbotron {
-  height: calc(100vh - 30px);
-  display: flex;  
+  /*height: calc(100vh - 30px);*/
+  position: relative;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  padding-left: 0;
+  padding-right: 0;
   margin-bottom: 0;
   background-color: papayawhip;
+  border-bottom: 8px #6F6E63 solid;
 }
 @media (min-width: 768px) {
   .jumbotron {
@@ -61,21 +84,60 @@ p, li {
   max-width: 40rem;
 }
 
+.bb8-race-track {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+}
+.bb8-race-car {
+  height: 40px;
+  animation-duration: 15s;
+  animation-name: runbbrun;
+  animation-iteration-count: infinite;
+  transition-timing-function: linear;
+}
+#bb8 {
+  font-size: 36px;
+  width: 50px;
+  transform: scaleX(-1);
+}
+.emoji {
+  position: absolute;
+  height: 40px;
+  bottom: 0;
+  font-size: 36px;
+}
+@keyframes runbbrun {
+  from {
+    transform: translate(-50px,0);
+  }
+  to {
+    transform: translate(100vw,0);
+  }
+}
+@media (max-width: 767px){
+
+  .bb8-race-track {
+    animation-duration: 10s;
+  }
+
+}
+
 figure img {
 	width: 100%;
 }
 
-h2.card-text.headline {
+h2.headline {
   font-family: 'Cabin Condensed', sans-serif;
   font-weight: 600;
-  font-size: 24px;
-	margin-bottom: 5px;
+  font-size: 28px;
+  margin-top: 24px;
+	margin-bottom: 18px;
 }
 
-p.card-text.byline {
-	font-size: 15px;
-	margin-bottom: 1rem;
-}
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -85,9 +147,28 @@ footer p {
   margin-bottom: .25rem;
 }
 
-@media (min-width: 576px){
-	.modal-dialog {
-	    max-width: 1000px;
-	    margin: 1.75rem auto;
+@media (max-width: 600px){
+  .nav-logo  {
+    width: 12px;
+    margin-right: 10px;
+  }
+	.navbar-nav {
+	  flex-direction: row;
 	}
+  .navbar h2 {
+    font-size: 16px;
+  }
+  .navbar-nav li {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .jumbotron h1 {
+    font-size: 3em;
+  }
+  .lead {
+    font-size: 1em;
+  }
+  .bb8-race-track  {
+    margin-top: 10px;
+  }
 }

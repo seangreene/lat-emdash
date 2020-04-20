@@ -1,33 +1,14 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark "> <!-- removed class mb-4 -->
   <a href="{{ site.baseurl }}/" class="navbar-brand d-flex align-items-center">
-    <img src="assets/images/shoe.png" style="width:20px; margin-right: 10px;" />
-    <!-- <h2>Em-Dash</h2> -->
+    <img class="nav-logo" src="assets/images/shoe.png" />
+    <h2>Em-Dash</h2>
   </a>
-  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown show">
-        <a class="nav-link dropdown-toggle" href="#" id="allrecipes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All recipes</a>
-        <div class="dropdown-menu " aria-labelledby="allrecipes">
-          {% for post in site.posts %}
-            <a class="dropdown-item" href="/m15-recipes/{{ post.url }}">{{ post.title }}</a>
-          {% endfor %}
-        </div>
+      {% for post in site.posts %}
+      <li class="nav-item {% if post.hide_nav == true %}hidden{%endif%}">
+        <a class="nav-link" href="#{{ post.slug }}">{{ post.slug }}</a>
       </li>
-      <li class="nav-item dropdown show">
-        <a class="nav-link dropdown-toggle" href="#" id="tutorials" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tutorials</a>
-        <div class="dropdown-menu " aria-labelledby="allrecipes">
-          {% for item in site.data.navigation %}
-            <a class="dropdown-item" href="/m15-recipes/{{ post.url }}">{{ item.name }}</a>
-          {% endfor %}
-        </div>
-      </li>
-    </ul> -->
-    <!-- <form class="form-inline mt-2 mt-md-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form> -->
-  </div>
+      {% endfor %}
+    </ul>
+
 </nav>

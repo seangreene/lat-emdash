@@ -5,31 +5,39 @@ layout: default
 
   <section class="jumbotron text-center">
     <div class="container">
+
       <h1 class="jumbotron-heading" data-toggle="modal" data-target="#exampleModal">{{ page.title }}</h1>
       <p class="lead text-muted">{{ page.description }}</p>
-<!--       <p>
-        <a href="#" class="btn btn-primary my-2">Main call to action</a>
-        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-      </p> -->
+    </div>
+    <div class="bb8-race-track">
+      <div class="emoji" style="left:10%">🏡</div>
+      <div class="emoji" style="left:40%">🌳</div>
+      <div class="emoji" style="left:50%">🏘️</div>
+      <div class="emoji" style="left:60%">🏠</div>
+      <div class="emoji" style="left:80%">🌳</div>
+      <div class="emoji" style="left:85%">🌳</div>      
+      <div class="bb8-race-car">
+        <div id="bb8">🏃</div>
+      </div>
     </div>
   </section>
 
-  {% for post in site.posts %}
-  {% if post.published == true %}
-  <section class="album py-5">
+  <section class="{{ post.title|slugify }}">
     <div class="container">
       <div class="row">
-          <div class="card mb-4 shadow-sm">
-            <div class="card-body">
-              <h2 class="card-text headline"><!-- <a href="{{ post.url | prepend:site.baseurl }}"> -->{{ post.title }}<!-- </a> --></h2>
+        {% for post in site.posts %}
+        {% if post.published == true %}
+          <div class="post" id="{{post.slug}}">
+            <div class="post-body">
+              <h2 class="headline {% if post.hide_headline == true %}hidden{%endif%}"><!-- <a href="{{ post.url | prepend:site.baseurl }}"> -->{{ post.title }}<!-- </a> --></h2>
               {{post.content}}
             </div>
           </div>
+         {% endif %}
+         {% endfor %}         
         </div>
     </div>
   </section>
-  {% endif %}
-  {% endfor %}
 
 <!-- 
   <section class="py-5">
