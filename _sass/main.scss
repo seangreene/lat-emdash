@@ -70,6 +70,7 @@ p, li {
   /*border-bottom: 8px #6F6E63 solid;*/
   border-radius: 0px;
   min-height:200px;
+  z-index:-1000;
 }
 /*@media (min-width: 768px) {
   .jumbotron {
@@ -96,6 +97,9 @@ p, li {
   bottom: -8px;
   z-index: -100;
 }
+.neighborhood {
+  z-index: 50;
+}
 .bb8-race-track {
   width: 100%;
   overflow-x: hidden;
@@ -103,8 +107,8 @@ p, li {
   display: flex;
   flex-direction: row;
   z-index: 100;
-  margin-bottom: 16px;
-  bottom: 8px;
+  margin-bottom: 0;
+  bottom: 0;
   /*border-bottom: 4px solid #6F6E63;*/
 }
 .bb8-race-car {
