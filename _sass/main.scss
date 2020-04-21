@@ -65,7 +65,6 @@ p, li {
   padding-bottom: 3rem;
   padding-left: 0;
   padding-right: 0;
-  margin-bottom: 0;
   background-color: #00BFFF;
   /*border-bottom: 8px #6F6E63 solid;*/
   border-radius: 0px;
@@ -97,13 +96,13 @@ p, li {
 }
 .bb8-race-track {
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   position: absolute;
   bottom: 0;
   display: flex;
   flex-direction: row;
   z-index: 100;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
 }
 .bb8-race-car {
   height: 40px;
