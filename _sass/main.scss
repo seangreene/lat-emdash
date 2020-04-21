@@ -23,6 +23,7 @@
 
 .jumbotron h1, .lead {
   color: white;
+  z-index: 1000;
 } 
 
 .post-body h2.headline {
@@ -103,7 +104,7 @@ p, li {
   flex-direction: row;
   z-index: 100;
   margin-bottom: 10px;
-  bottom: 4px;
+  bottom: 8px;
   /*border-bottom: 4px solid #6F6E63;*/
 }
 .bb8-race-car {
