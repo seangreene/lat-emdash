@@ -97,12 +97,13 @@ p, li {
 .bb8-race-track {
   width: 100%;
   overflow-x: hidden;
-  /*position: absolute;*/
-  bottom: 0;
+  position: absolute;
   display: flex;
   flex-direction: row;
   z-index: 100;
   margin-bottom: 0px;
+  bottom: -16px;
+  border-bottom: 8px solid #6F6E63;
 }
 .bb8-race-car {
   height: 40px;
