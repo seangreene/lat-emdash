@@ -43,13 +43,13 @@ p, li {
 .post {
   max-width: 650px;
   width: 100%;
-  padding-bottom: 35px;
-  margin: 35px auto 0;  
-  border-bottom: 1px solid #ddd;
+  /*padding-bottom: 35px;*/
+  margin: 35px auto 35px;  
+  /*border-bottom: 1px solid #ddd;*/
 }
-.post:last-of-type {
+/*.post:last-of-type {
   border-bottom: none;
-}
+}*/
 
 .hidden {
   display: none;
@@ -67,7 +67,14 @@ p, li {
   padding-right: 0;
   margin-bottom: 0;
   background-color: #00BFFF;
-  border-bottom: 8px #6F6E63 solid;
+  /*border-bottom: 8px #6F6E63 solid;*/
+  border-radius: 0px;
+}
+.road {
+  border-top: 8px solid gray;
+  width: 100%;
+  position: absolute;
+  bottom: -8px;  
 }
 @media (min-width: 768px) {
   .jumbotron {
