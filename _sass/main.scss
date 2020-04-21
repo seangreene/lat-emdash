@@ -13,15 +13,15 @@
 }
 
 
-.topper h1, .post-body h2 {
+.jumbotron h1, .post-body h2 {
   font-family: 'Cabin Condensed', sans-serif;
 }
-.topper h1 {
+.jumbotron h1 {
   font-size: 96px;
   font-weight: 700;
 }
 
-.topper h1, .lead {
+.jumbotron h1, .lead {
   color: white;
   z-index: 1000;
 } 
@@ -55,7 +55,7 @@ p, li {
 .hidden {
   display: none;
 }
-.topper {
+.jumbotron {
   /*height: calc(100vh - 30px);*/
   position: relative;
   display: flex;
@@ -73,21 +73,21 @@ p, li {
   z-index:-1000;
 }
 /*@media (min-width: 768px) {
-  .topper {
+  .jumbotron {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }*/
 
-.topper p:last-child {
+.jumbotron p:last-child {
   margin-bottom: 0;
 }
 
-.topper-heading {
+.jumbotron-heading {
   font-weight: 300;
 }
 
-.topper .container {
+.jumbotron .container {
   max-width: 40rem;
 }
 .road {
@@ -184,7 +184,7 @@ footer p {
     margin-right: 10px;
     font-size: 16px;
   }
-  .topper h1 {
+  .jumbotron h1 {
     font-size: 3em;
   }
   .lead {
