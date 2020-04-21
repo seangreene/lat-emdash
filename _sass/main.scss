@@ -68,6 +68,7 @@ p, li {
   background-color: #00BFFF;
   /*border-bottom: 8px #6F6E63 solid;*/
   border-radius: 0px;
+  min-height:200px;
 }
 @media (min-width: 768px) {
   .jumbotron {
@@ -101,7 +102,7 @@ p, li {
   display: flex;
   flex-direction: row;
   z-index: 100;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   bottom: 4px;
   /*border-bottom: 4px solid #6F6E63;*/
 }
