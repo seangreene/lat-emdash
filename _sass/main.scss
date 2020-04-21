@@ -62,14 +62,14 @@ p, li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
   padding-left: 0;
   padding-right: 0;
   background-color: #00BFFF;
   /*border-bottom: 8px #6F6E63 solid;*/
   border-radius: 0px;
-  min-height:200px;
+  height:30vh;
   z-index:-1000;
 }
 /*@media (min-width: 768px) {
