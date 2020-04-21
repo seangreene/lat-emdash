@@ -5,5 +5,5 @@
 layout: home
 title: The Em-Dash
 description: A virtural 5K, 10K and fun run.
-
+image: assets/images/em-dash.png
 ---
