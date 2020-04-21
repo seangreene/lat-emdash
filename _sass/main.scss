@@ -70,12 +70,6 @@ p, li {
   /*border-bottom: 8px #6F6E63 solid;*/
   border-radius: 0px;
 }
-.road {
-  border-bottom: 8px solid #6F6E63;
-  width: 100%;
-  position: absolute;
-  bottom: -8px;  
-}
 @media (min-width: 768px) {
   .jumbotron {
     padding-top: 6rem;
@@ -94,7 +88,13 @@ p, li {
 .jumbotron .container {
   max-width: 40rem;
 }
-
+.road {
+  border-bottom: 8px solid #6F6E63;
+  width: 100%;
+  position: absolute;
+  bottom: -8px;
+  z-index: -100;
+}
 .bb8-race-track {
   width: 100%;
   overflow: hidden;
@@ -102,6 +102,7 @@ p, li {
   bottom: 0;
   display: flex;
   flex-direction: row;
+  z-index: 100;
 }
 .bb8-race-car {
   height: 40px;
@@ -109,17 +110,20 @@ p, li {
   animation-name: runbbrun;
   animation-iteration-count: infinite;
   transition-timing-function: linear;
+  z-index: 100;
 }
 #bb8 {
   font-size: 36px;
   width: 50px;
   transform: scaleX(-1);
+  z-index: 100;
 }
 .emoji {
   position: absolute;
   height: 40px;
   bottom: 0;
   font-size: 36px;
+  z-index: 100;
 }
 @keyframes runbbrun {
   from {
