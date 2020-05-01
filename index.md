@@ -5,5 +5,5 @@
 layout: home
 title: The Em-Dash
 description: A virtual 5K, 10K and fun run.
-image: https://seangreene.github.io/lat-emdash/assets/images/em-dash.png
+image: https://seangreene.github.io/lat-emdash/assets/images/em-dash2.png
 ---
