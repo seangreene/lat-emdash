@@ -27,15 +27,26 @@ layout: default
     <!-- <div class="road"></div> -->
   </section>
 
-  <section class="{{ post.title|slugify }}">
+  <section class="posts">
     <div class="container">
       <div class="row">
-        {% for post in site.posts %}
+        {% for post in site.posts reversed %}
         {% if post.published == true %}
-          <div class="post" id="{{post.slug}}">
+          <div class="post" id="{{post.slug|replace:' ','-'}}">
             <div class="post-body">
-              <h2 class="headline {% if post.hide_headline == true %}hidden{%endif%}"><!-- <a href="{{ post.url | prepend:site.baseurl }}"> -->{{ post.title }}<!-- </a> --></h2>
-              {{post.content}}
+
+              <h2 class="headline">
+
+               
+                <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}
+                </a>
+              </h2>
+
+              {% if post.preview == true %}
+                <p><a href="{{ post.url | prepend:site.baseurl }}">Sign up here!</a></p>
+              {% else %}
+                {{ post.content }}
+              {% endif %}
             </div>
           </div>
          {% endif %}
@@ -43,7 +54,7 @@ layout: default
          <div class="post">
           <div class="post-body">
             <h2 class="headline">Join the LAT Strava club</h2>
-            <div style="max-width:300px; margin: auto;">
+            <div style="max-width:420px; margin: auto;">
               <iframe allowtransparency frameborder='0' height='160' scrolling='no' src='https://www.strava.com/clubs/551933/latest-rides/3ea03c11f4a19645e408d2bbfc6bf9257e331a6f?show_rides=false' width='100%'></iframe>
             </div>
           </div>

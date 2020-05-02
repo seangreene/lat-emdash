@@ -3,6 +3,7 @@ layout: post
 title:  "What is going on here?"
 published: true
 hide_nav: true
+preview: false
 ---
 
 A virtual race is just like a real 5K or 10K, except you do it whenever and wherever you like and it does not involve large gatherings of people.
