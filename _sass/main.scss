@@ -38,13 +38,11 @@ p, li {
 .row {
   margin: 0;
 }
-
 .post {
   max-width: 650px;
   width: 100%;
   margin: 25px auto 25px;  
 }
-
 .hidden {
   display: none;
 }
@@ -115,6 +113,9 @@ p, li {
   bottom: 0;
   font-size: 36px;
   z-index: 100;
+}
+.results {
+  margin: 40px auto;
 }
 @keyframes runbbrun {
   from {

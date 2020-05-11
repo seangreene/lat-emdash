@@ -3,7 +3,7 @@ layout: post
 title: "Submit your time"
 published: true
 slug: submit your time
-preview: false
+feed: false
 ---
 
 Once you finish your race, report your results using the form below. You can also share the link to a Strava activity or upload a GPX file.

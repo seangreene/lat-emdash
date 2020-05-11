@@ -30,23 +30,30 @@ layout: default
   <section class="posts">
     <div class="container">
       <div class="row">
-        {% for post in site.posts reversed %}
-        {% if post.published == true %}
+        {% for post in site.posts %}
+          {% if post.slug == 'results' %}
           <div class="post" id="{{post.slug|replace:' ','-'}}">
             <div class="post-body">
 
               <h2 class="headline">
-
-               
-                <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}
-                </a>
+                {{ post.title }}
               </h2>
 
-              {% if post.preview == true %}
-                <p><a href="{{ post.url | prepend:site.baseurl }}">Sign up here!</a></p>
-              {% else %}
-                {{ post.content }}
-              {% endif %}
+              {{ post.content }}
+            </div>
+          </div>
+          {% endif %}
+        {% endfor %}
+        {% for post in site.posts reversed %}
+        {% if post.published == true and post.feed == true %}
+          <div class="post" id="{{post.slug|replace:' ','-'}}">
+            <div class="post-body">
+
+              <h2 class="headline">
+                {{ post.title }}
+              </h2>
+
+              {{ post.content }}
             </div>
           </div>
          {% endif %}
